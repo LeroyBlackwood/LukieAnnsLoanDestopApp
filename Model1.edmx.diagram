@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b16df3c355074c56be1d66678b261f99" Name="Diagram1">
+        <EntityTypeShape EntityType="LukieAnnsLoans_dbModel.LoanInterest" Width="1.5" PointX="1.5" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="LukieAnnsLoans_dbModel.loanIssueance" Width="1.5" PointX="5.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LukieAnnsLoans_dbModel.LoanRequest_Linker" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LukieAnnsLoans_dbModel.LoanTerm" Width="1.5" PointX="0.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LukieAnnsLoans_dbModel.LoanType" Width="1.5" PointX="0.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LukieAnnsLoans_dbModel.Login_DateTimeTable" Width="1.5" PointX="5.25" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LukieAnnsLoans_dbModel.personnel_LogIn" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LukieAnnsLoans_dbModel.Personnel_Login_LinkerTable" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LukieAnnsLoans_dbModel.Personnel_Table" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LukieAnnsLoans_dbModel.PersonnelRoleTable" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LukieAnnsLoans_dbModel.Repayment" Width="1.5" PointX="7.5" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LukieAnnsLoans_dbModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="LukieAnnsLoans_dbModel.FK_LoanType_LoanInterest" ManuallyRouted="false" />
+        <AssociationConnector Association="LukieAnnsLoans_dbModel.FK_loanIssueance_CusLoanRequest_Linker" ManuallyRouted="false" />
+        <AssociationConnector Association="LukieAnnsLoans_dbModel.FK_Repayment_loanIssueance" ManuallyRouted="false" />
+        <AssociationConnector Association="LukieAnnsLoans_dbModel.FK_LoanTermLinkTable_Customer_Table" ManuallyRouted="false" />
+        <AssociationConnector Association="LukieAnnsLoans_dbModel.FK_LoanTermLinkTable_LoanTerm" ManuallyRouted="false" />
+        <AssociationConnector Association="LukieAnnsLoans_dbModel.FK_LoanTermLinkTable_LoanType" ManuallyRouted="false" />
+        <AssociationConnector Association="LukieAnnsLoans_dbModel.FK_Login_DateTimeTable_LogIn" ManuallyRouted="false" />
+        <AssociationConnector Association="LukieAnnsLoans_dbModel.FK_personnel_LogIn_Personnel_Table" ManuallyRouted="false" />
+        <AssociationConnector Association="LukieAnnsLoans_dbModel.FK_LogIn_UserLinkerTalbe_UserTable" ManuallyRouted="false" />
+        <AssociationConnector Association="LukieAnnsLoans_dbModel.FK_Personnel_Login_LinkerTable_Personnel_Table" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
